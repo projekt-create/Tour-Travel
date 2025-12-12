@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <title>Tour & Travel</title>
+</head>
+<body>
+    <nav class="nav">
+        <header class="header">
+            <a href="#" class="header__title"><h1 class="header__title">Tour & Travel</h1></a>
+            <ul class="header__list">
+                <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                <li class="header__item"><a href="#" class="header__link">About</a></li>
+                <li class="header__item"><a href="#" class="header__link">Services</a></li>
+                <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+            </ul>
+            <div class="header__box">
+                <button class="header__btn header__btn-signup" id="btn-signup">Sign up</button>
+                <button class="header__btn header__btn-login" id="btn-login">Login</button>
+            </div>
+            <div class="header__menu">
+                <p class="header__menu-text">Book a place</p>
+                <p class="header__menu-text logout">Logout</p>
+            </div>
+        </header>
+        <div class="intro">
+            <h2 class="intro__title">Explore the world with us</h2>
+            <p class="intro__text">Discover amazing places at exclusive deals</p>
+            <button class="intro__btn" id="explore-btn">Explore Now</button>
+            <div class="intro__box">
+                <div class="intro__box__loop">
+                    <div class="intro__box__cards"><img src="./img/Ice.webp" alt=""></div>
+                    <div class="intro__box__cards"><img src="./img/Walpers.jpeg" alt=""></div>
+                    <div class="intro__box__cards"><img src="./img/new.jpeg" alt=""></div>
+                </div>
+                <div aria-hidden="true" class="intro__box__loop">
+                    <div class="intro__box__cards"><img src="./img/Ice.webp" alt=""></div>
+                    <div class="intro__box__cards"><img src="./img/Walpers.jpeg" alt=""></div>
+                    <div class="intro__box__cards"><img src="./img/new.jpeg" alt=""></div>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="register">
+        <div class="signup">
+            <h2 class="signup__title">Sign up</h2>
+            <p class="signup__close">x</p>
+            <form action="" class="signup__form">
+                <input type="text" placeholder="Name" class="signup__input signup__input-name">
+                <input type="email" placeholder="Email" class="signup__input signup__input-email">
+                <input type="password" placeholder="Password" class="signup__input signup__input-password">
+                <button type="submit" class="signup__btn">Sign up</button>
+            </form>
+            <p class="signup__text">Already have an account? <span class="signup__link">Login</span></p>
+        </div>
+        <div class="login">
+            <h2 class="login__title">Login</h2>
+            <p class="login__close">x</p>
+            <form action="" class="login__form">
+                <input type="email" placeholder="Email" class="login__input login__input-email">
+                <input type="password" placeholder="Password" class="login__input login__input-password">
+                <button type="submit" class="login__btn">Login</button>
+            </form>
+            <p class="login__text">Don't have an account? <span class="login__link">Sign up</span></p>
+        </div>
+    </div>
+    <div class="book">
+        <div class="book__container">
+            <span class="book__close">x</span>
+            <h2 class="book__title">Book Your Dream Destination</h2>
+            <form action="" class="book__form">
+                <input type="text" placeholder="Full Name" class="book__input book__input-name">
+                <input type="email" placeholder="Email Address" class="book__input book__input-email">
+                <input type="tel" placeholder="Phone Number" class="book__input book__input-phone">
+                <input type="text" class="book__input book__input-destination" placeholder="Destination"></input>
+                <select class="destination-result" id="result"></select>
+                <input type="date" class="book__input book__input-date">
+                <button type="submit" class="book__btn" id="book-btn">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <div class="cards">
+    </div>
+    <div class="more_wrapper">
+        <div class="more">
+            <div class="more_img">
+                <img src="" alt="">
+            </div>
+            <div class="more_info">
+                <h2 class="more_info-title"></h2>
+                <div class="more_info_box">
+                    <p class="more_info-text"></p>
+                    <p class="more_info-subtext"></p>
+                </div>
+                <div class="more_info_contein">
+                    <p class="more_info-lng"></p>
+                    <p class="more_info-lat"></p>
+                    <img class="more_info-img" src="" alt="">
+                </div>
+                <p class="more_info-price"></p>
+                <button class="more_info-btn">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

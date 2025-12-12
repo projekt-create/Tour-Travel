@@ -1,0 +1,94 @@
+.book{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    &__close{
+            position: absolute;
+            top: 30%;
+            right: 40%;
+            cursor: pointer;
+        }
+
+        &__title{
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input{
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+                width: 100%;
+                outline: none;
+            }
+
+            button{
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: gray;
+                }
+            }
+
+            &__input-destination{
+                width: auto;
+                padding: 10px;
+                display: none;
+                border: 1px solid black;
+                border-radius: 5px;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .destination-result{
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid black;
+                border-radius: 5px;
+                display: flex;
+                outline: none;
+                flex-direction: column;
+                gap: 5px;
+                max-width: 200px;
+                max-height: 0px;
+                overflow-y: auto;
+                background-color: white;
+                
+                & option{
+                    color: black;
+                }
+            }
+        }
+}

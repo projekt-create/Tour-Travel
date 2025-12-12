@@ -1,0 +1,150 @@
+.register{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    .signup{
+        width: 400px;
+        height: 400px;
+        background-color: inherit;
+        border: 1px solid black;
+        border-radius: 10px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        left: -100%;
+
+        &__title{
+            font-size: 2rem;
+            color: black;
+        }
+
+        &__close{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input{
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+                outline: none;
+                width: 100%;
+            }
+
+            button{
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: grey;
+                }
+
+                &:active{
+                    background-color: black;
+                }
+            }
+        }
+
+        &__text{
+            font-size: 1rem;
+            color: black;
+
+            span{
+                color: blue;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .login{
+        width: 400px;
+        height: 400px;
+        background-color: inherit;
+        border: 1px solid black;
+        border-radius: 10px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        right: -100%;
+
+        &__title{
+            font-size: 2rem;
+            color: black;
+        }
+
+        &__close{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input{
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+                width: 100%;
+                outline: none;
+            }
+
+            button{
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: grey;
+                }
+
+                &:active{
+                    background-color: black;
+                }
+            }
+        }
+
+        &__text{
+            font-size: 1rem;
+            color: black;
+
+            span{
+                color: blue;
+                cursor: pointer;
+            }
+        }
+    }
+}
